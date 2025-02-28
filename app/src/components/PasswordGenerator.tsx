@@ -97,7 +97,7 @@ const PasswordGenerator = () => {
               <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-500 to-purple-500 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000"></div>
               <div className="relative bg-black rounded-lg p-4 min-h-16 flex flex-col md:flex-row items-center justify-between">
                 <div className="flex flex-col">
-                  <span className="text-lg font-mono text-white break-all">
+                  <span data-testid="password-display" className="text-lg font-mono text-white break-all">
                     {password || 'Your password will appear here'}
                   </span>
                   {password && (
