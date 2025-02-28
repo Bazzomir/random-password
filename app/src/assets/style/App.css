@@ -1,16 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  
   font-synthesis: none;
+  font-weight: 400;
+  line-height: 1.5;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,8 +13,9 @@
 
 body {
   margin: 0;
+  padding: 0;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 @keyframes fadeInDown {
@@ -28,6 +23,7 @@ body {
     opacity: 0;
     transform: translate3d(-50%, -20px, 0);
   }
+
   to {
     opacity: 1;
     transform: translate3d(-50%, 0, 0);
@@ -43,15 +39,54 @@ body {
 }
 
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.2;
   }
+
   50% {
     opacity: 0.3;
   }
 }
 
-/* Glass morphism effect */
+/* @keyframes fadeOut {
+  0% {
+    opacity: 1;
+    z-index: 9;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: 0;
+  }
+} */
+
+.App {
+  background: linear-gradient(to bottom right, #4a044e, #3730a3, #1e3a8a);
+  min-height: 100vh;
+  min-width: 100vw;
+  display: grid;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* .toast {
+  position: fixed;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to bottom right, #4a044e, #3730a3, #1e3a8a);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  animation: fadeOut 2s forwards;
+} */
+
+.h-90 {
+  min-height: 90vh;
+}
+
 .backdrop-blur-xl {
   backdrop-filter: blur(24px);
 }
