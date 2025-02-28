@@ -91,11 +91,11 @@ const PasswordGenerator = () => {
             </p>
           </div>
 
-          <div className="p-6 space-y-6">
+          <div className="p-3 md:p-6 space-y-6">
             {/* Password display area */}
             <div className="relative group">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-500 to-purple-500 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000"></div>
-              <div className="relative bg-black rounded-lg p-4 min-h-16 flex items-center justify-between">
+              <div className="relative bg-black rounded-lg p-4 min-h-16 flex flex-col md:flex-row items-center justify-between">
                 <div className="flex flex-col">
                   <span className="text-lg font-mono text-white break-all">
                     {password || 'Your password will appear here'}
@@ -109,7 +109,7 @@ const PasswordGenerator = () => {
                   )}
                 </div>
                 {password && (
-                  <div className="flex gap-2 ">
+                  <div className="flex flex-row justify-content-between gap-2 my-3 md:my-0">
                     <button
                       onClick={copyToClipboard}
                       className="p-2 bg-indigo-600 hover:bg-indigo-700 rounded-md transition-colors text-white"
@@ -123,7 +123,7 @@ const PasswordGenerator = () => {
                     {/* Copy notification */}
                     {copied && (
                       <div className="absolute top-0 right-0 left-0 mx-auto w-64 transform -translate-y-full">
-                        <div className="bg-green-500 text-white px-4 py-2 rounded-t-lg rounded-r-lg shadow-lg text-center animate-fade-in-down">
+                        <div className="bg-gradient-to-l from-green-300 to-green-600 text-white px-4 py-2 rounded-t-lg rounded-r-lg shadow-lg text-center animate-fade-in-down">
                           Password copied! 📋
                         </div>
                       </div>
@@ -144,7 +144,7 @@ const PasswordGenerator = () => {
             </div>
 
             {/* Password options */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid gird-cols-1 md:grid-cols-2 gap-2 md:gap-4">
               {passwordOptions.map((option, index) => (
                 <button
                   key={option.label}

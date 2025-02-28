@@ -62,17 +62,12 @@ body {
   }
 }
 
-.App {
-  background: linear-gradient(to bottom right, #4a044e, #3730a3, #1e3a8a);
-  min-height: 100vh;
-  min-width: 100vw;
-  display: grid;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
 .h-90 {
   min-height: 90vh;
+}
+
+.w-50 {
+  width: 50%;
 }
 
 .backdrop-blur-xl {
