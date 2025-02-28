@@ -121,13 +121,13 @@ const PasswordGenerator = () => {
                     </button>
 
                     {/* Copy notification */}
-                    {/* {copied && ( */}
+                    {copied && (
                       <div className="absolute top-0 right-0 left-0 mx-auto w-64 transform -translate-y-full">
                         <div className="bg-green-500 text-white px-4 py-2 rounded-t-lg rounded-r-lg shadow-lg text-center animate-fade-in-down">
                           Password copied! 📋
                         </div>
                       </div>
-                    {/* )} */}
+                    )}
 
                     <button
                       onClick={refreshPassword}
