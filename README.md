@@ -1,54 +1,74 @@
-# React + TypeScript + Vite
+# Random Password Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application for generating secure random passwords with different length options and a stylish user interface.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The Random Password Generator is a user-friendly web application that allows users to generate secure passwords instantly. With multiple length options and a modern design, it ensures both security and ease of use.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Generate different types of passwords:
+  - 4-digit PIN
+  - 8 character password
+  - 12 character password 
+  - 22 character password
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Modern UI:
+  - Glassmorphism design for a sleek, stylish appearance.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Password strength indicator:
+  - Displays the strength of your based on length and complexity.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Copy to Clipboard:
+  - One-click copy functionality to quickly use your password.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- ResponWorks seamlessly on both desktop and mobile devices.sive design: 
+  - 
+
+## Technologies Used
+
+- React 18+
+- TypeScript
+- Vite
+- Vitest
+- Tailwind CSS
+
+### Installation
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/Bazzomir/random-password.git
+   cd random-password
+   ```
+
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+
+3. Start the development server
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+#### Testing 
+
+1. Component, Function & Logic Testing
+   ```bash
+   cdcd random-password
+   npx vitest --config vitest.config.ts
+   ```
+
+
+## Usage
+
+1. Open the application in your browser.
+
+2. Select the desired password length.
+
+3. Click the Generate button to create a secure password.
+
+4. Copy the generated password using the Copy button.
