@@ -1,7 +1,5 @@
 # Random Password Generator
 
-## Overview
-
 The Random Password Generator is a user-friendly web application that allows users to generate secure passwords instantly. With multiple length options and a modern design, it ensures both security and ease of use.
 
 ## Features
