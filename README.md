@@ -19,8 +19,8 @@ The Random Password Generator is a user-friendly web application that allows use
 - Copy to Clipboard:
   - One-click copy functionality to quickly use your password.
 
-- ResponWorks seamlessly on both desktop and mobile devices.sive design: 
-  - 
+- Responsive Design:
+  - Works seamlessly on both desktop and mobile devices. 
 
 ## Technologies Used
 
