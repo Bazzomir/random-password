@@ -58,7 +58,7 @@ The Random Password Generator is a user-friendly web application that allows use
 
 1. Component, Function & Logic Testing
    ```bash
-   cdcd random-password
+   cd random-password
    npx vitest --config vitest.config.ts
    ```
 
