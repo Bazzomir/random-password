@@ -1,9 +1,5 @@
 # Random Password Generator
 
-A modern React application for generating secure random passwords with different length options and a stylish user interface.
-
-## Overview
-
 The Random Password Generator is a user-friendly web application that allows users to generate secure passwords instantly. With multiple length options and a modern design, it ensures both security and ease of use.
 
 ## Features
@@ -23,8 +19,8 @@ The Random Password Generator is a user-friendly web application that allows use
 - Copy to Clipboard:
   - One-click copy functionality to quickly use your password.
 
-- ResponWorks seamlessly on both desktop and mobile devices.sive design: 
-  - 
+- Responsive Design:
+  - Works seamlessly on both desktop and mobile devices. 
 
 ## Technologies Used
 
@@ -57,8 +53,9 @@ The Random Password Generator is a user-friendly web application that allows use
 #### Testing 
 
 1. Component, Function & Logic Testing
+
    ```bash
-   cdcd random-password
+   cd random-password
    npx vitest --config vitest.config.ts
    ```
 
